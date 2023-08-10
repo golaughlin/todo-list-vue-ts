@@ -7,7 +7,7 @@ interface Todo {
 };
 
 const todos = reactive<Todo[]>(JSON.parse(localStorage.getItem('todos-vue')!) || []);
-const todoText = ref<string>("");
+const todoText = ref("");
 
 watch(todos, (newTodos: Todo[]) => {
   localStorage.setItem('todos-vue', JSON.stringify(newTodos));
