@@ -20,7 +20,7 @@ function addTodo() {
   const newTodo: Todo = {id: Date.now(), text: todoText.value};
   todos.push(newTodo);
   todoText.value = "";
-  console.log("New Todo created.")
+  console.log("New Todo created.");
 }
 
 function removeTodo(todo: Todo) {
